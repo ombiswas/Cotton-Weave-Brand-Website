@@ -19,103 +19,96 @@ body {
     width: 100vw;
     display: flex;
     gap: 120px;
-    padding: 140px 100px 0px 160px;
+    padding: 9vw 10vw 0vw 9vw
 }
 
 .left {
     width: 45%;
     height: 100%;
-    /* background-color: cyan; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 3vw;
 }
 
 .left h1 {
-    font-size: 110px;
+    font-size: 9vw;
     font-weight: 400;
-    line-height: 100px;
-}
-
-.bottom-left {
-    height: 250px;
-    /* background-color: yellow; */
+    line-height: 7vw;
 }
 
 .colors {
-    border-radius: 20px;
+    border-radius: 50px;
     border: 1px solid black;
     width: fit-content;
-    padding: 6px 10px;
+    padding: 0.6vw 0.6vw;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .colors h5 {
-    font-size: 14px;
+    font-size: 1.3vw;
     font-weight: 600;
-    margin-right: 15px;
+    margin-right: 1vw;
 }
 
 .color1 {
-    height: 15px;
-    width: 15px;
+    height: 1.2vw;
+    width: 1.2vw;
     background-color: rgb(137, 88, 25);
     border-radius: 50%;
-    margin-right: 2px;
+    margin-right: 0.4vw;
 }
 
 .color2 {
-    height: 15px;
-    width: 15px;
+    height: 1.2vw;
+    width: 1.2vw;
     background-color: black;
     border-radius: 50%;
-    margin-left: 2px;
 }
 
 .bottom-left h2 {
-    font-size: 23px;
+    font-size: 2vw;
     font-weight: 600;
-    margin-top: 60px;
+    margin-top: 3vw;
 }
 
 .bottom-left p {
-    font-size: 16px;
-    font-weight: 500;
-    width: 70%;
-    margin-top: 8px;
-    line-height: 20px;
+    font-size: 1.2vw;
+    font-weight: 400;
+    width: 80%;
+    margin-top: 1vw;
+    line-height: 1.4vw;
 }
 
 .right {
-    width: 30%;
+    width: 35%;
     height: 100%;
-    padding-top: 50px;
+    padding-top: 2vw;
+    margin-left: 4vw;
     display: flex;
     flex-direction: column;
-    /* margin-top: 60px; */
-    /* background-color: aquamarine; */
-    position: relative;
-    /* overflow: hidden; */
+    /* position: relative; */
 }
 
 .right-top {
-    height: 50px;
+    height: 3vw;
     width: 100%;
-    /* background-color: orange; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 20px;
+    padding-right: 1.5vw;
 }
 
 .right-top h4 {
-    font-size: 18px;
+    font-size: 1.5vw;
     font-weight: 600;
 }
 
 .right-top h5 {
     font-weight: 600;
+    font-size: 1.1vw;
 }
 
 .right-top h5 i {
@@ -126,7 +119,7 @@ body {
     background-color: lightpink;
     width: 100%;
     height: 100%;
-    flex: 1;
+    /* flex: 1; */
     overflow: hidden;
 }
 
@@ -138,8 +131,8 @@ body {
 }
 
 .circle {
-    height: 130px;
-    width: 130px;
+    height: 10vw;
+    width: 10vw;
     border-radius: 50%;
     color: white;
     background-color: black;
@@ -152,7 +145,7 @@ body {
 }
 
 .circle h5 {
-    font-size: 16px;
+    font-size: 1.3vw;
     font-weight: 400;
 }
 
@@ -160,8 +153,207 @@ body {
     rotate: -90deg;
     transform-origin: 0 0;
     position: absolute;
-    top: 90%;
-    left: -15%;
-    font-size: 30px;
+    top: 95%;
+    left: -12%;
+    font-size: 2.2vw;
     font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .circle {
+        left: 85%
+    }
+}
+
+@media (max-width: 768px) {
+    .right {
+        width: 50%;
+        display: flex;
+        margin-left: 0;
+    }
+
+    .right-top {
+        height: 5vw;
+    }
+
+    .right-top h4 {
+        font-size: 2.1vw;
+    }
+
+    .right-top h5 {
+        font-size: 1.5vw;
+    }
+
+    #rotated {
+        top: 95%;
+        left: -14%;
+        font-size: 3vw;
+    }
+
+    .left {
+        width: 40%;
+    }
+
+    .left h1 {
+        font-size: 12vw;
+        font-weight: 400;
+        line-height: 8.5vw;
+    }
+
+    .colors {
+        padding: 0.8vw 1vw;
+    }
+
+    .colors h5 {
+        font-size: 1.7vw;
+    }
+
+    .color1 {
+        height: 1.5vw;
+        width: 1.5vw;
+    }
+
+    .color2 {
+        height: 1.5vw;
+        width: 1.5vw;
+    }
+
+    .bottom-left h2 {
+        font-size: 2.8vw;
+        font-weight: 600;
+    }
+
+    .bottom-left p {
+        font-size: 1.7vw;
+        font-weight: 400;
+        width: 90%;
+        margin-top: 1vw;
+        line-height: 1.8vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .main {
+        flex-direction: column;
+        padding: 5vh;
+        padding-bottom: 0;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+        /* background-color: lightgray; */
+        width: 100%;
+        gap: 0;
+    }
+
+    .left {
+        width: 100%;
+        height: 45%;
+        justify-content: flex-start;
+        /* align-items: flex-start; */
+        gap: 0;
+        /* background-color: lightpink; */
+    }
+
+    .left h1 {
+        font-size: 14vw;
+        font-weight: 400;
+        line-height: 8.5vw;
+    }
+
+    .colors {
+        padding: 0.8vw 1.5vw;
+        margin-top: 50px;
+    }
+
+    .colors h5 {
+        font-size: 2.2vw;
+    }
+
+    .color1 {
+        height: 2vw;
+        width: 2vw;
+    }
+
+    .color2 {
+        height: 2vw;
+        width: 2vw;
+    }
+
+    .bottom-left h2 {
+        font-size: 3vw;
+        font-weight: 600;
+    }
+
+    .bottom-left p {
+        font-size: 2.2vw;
+        width: 100%;
+        margin-top: 10px;
+        line-height: 2.5vw;
+    }
+
+    .right {
+        width: 100%;
+        height: 55%;
+        /* background-color: lightseagreen; */
+        display: flex;
+        margin: 0;
+        flex-direction: column-reverse;
+        /* justify-content: flex-start; */
+        /* align-items: center; */
+        flex: 1;
+        padding: 0 20vw 0 20vw;
+    }
+
+    .right-top {
+        height: 5vw;
+    }
+
+    .right-top h4 {
+        font-size: 2.1vw;
+    }
+
+    .right-top h5 {
+        font-size: 1.5vw;
+    }
+
+    #rotated {
+        rotate: -90deg;
+        transform-origin: 0 0;
+        position: relative;
+        top: 90%;
+        left: -15%;
+        font-size: 3vw;
+    }
+
+    .image {
+        background-color: cyan;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        overflow: hidden;
+    }
+
+    .image img {
+        max-width: 100%;
+        max-height: 100%;
+        /* height: auto;
+        width: auto; */
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .circle {
+        height: 13vw;
+        width: 13vw;
+        top: 45%;
+        left: 65%;
+    }
+
+    .circle h5 {
+        font-size: 1.8vw;
+        font-weight: 400;
+    }
 }
